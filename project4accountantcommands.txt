@@ -1,0 +1,18 @@
+// Theses are the commands for the accountant user for Project 4
+// Note that these are not sql commands, just selections.
+// 
+// Command 1
+       choose First Option
+//
+// Command 2
+       choose Second Option
+//
+// Command 3
+       choose Third Option
+//
+// Command 4
+       choose Fourth Option
+//
+// Command 5
+       choose Fifth Option
+//

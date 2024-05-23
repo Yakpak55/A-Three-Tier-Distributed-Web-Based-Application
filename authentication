@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--WelcomeServlet.html-->
+<html lang = "en">
+<head>
+    <title>Spring 2024 - Basic Welcome Servlet</title>
+    <meta charset = "utf-8"/>
+    <style type = "text/css">
+    <!--
+        body{background-color: green; font-family: Calibri, Arial, sans-serif;font-size: xx-large;}
+        input{font-size: xx-large; border:1px black solid; box-shadow: 5px 5px 5px 2px black;}
+    -->
+    </style>
+    </head>
+    
+    <body>
+        <form action = "/first-example/welcome1" method = "get">
+        <p>
+            <label>Click the button to invole a Welcome servlet
+                <input type = "submit" value = "Run Welcome Servlet" />
+            </label>
+            </p>
+        </form>
+    </body>
+</html>

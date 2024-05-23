@@ -1,0 +1,52 @@
+<web-app>
+    <!-- General description of your Web application -->
+    <display-name>
+        CNT 4714 Spring 2024 Servlet First Example    
+    </display-name>
+    <description>
+        This is the Web application in which we will demonstrate our first servlet example.
+    </description>
+
+<welcome-file-list>
+        <welcome-file>authentication.html</welcome-file>
+    </welcome-file-list>
+<!-- Servlet definitions -->
+    <servlet>
+        <description>
+            A simple servlet that handles an HTTP get request.
+        </description> 
+        <servlet-name>alpha</servlet-name>
+        <servlet-class>project4.Authenticationservlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <description>
+            A simple servlet that handles an HTTP get request.
+        </description> 
+        <servlet-name>bravo</servlet-name>
+        <servlet-class>project4.Clientservlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <description>
+            A simple servlet that handles an HTTP get request.
+        </description> 
+        <servlet-name>charlie</servlet-name>
+        <servlet-class>project4.Rootservlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>alpha</servlet-name>
+        <url-pattern>/authenticate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>bravo</servlet-name>
+        <url-pattern>/Client</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>charlie</servlet-name>
+        <url-pattern>/Root</url-pattern>
+    </servlet-mapping>
+</web-app>

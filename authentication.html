@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Spring 2024 Project 4 Enterprise System</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        form {
+            margin: auto;
+            width: 300px;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 8px;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            box-sizing: border-box;
+        }
+        .subtitle {
+            color: red;
+        }
+    </style>
+    <script>
+        function authenticate() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            if (username === 'admin' && password === 'password123') {
+                alert('Authentication successful!');
+            } else {
+                alert('Authentication failed. Please check your username and password.');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Spring 2024 Project 4 Enterprise System</h1>
+    <h2>A Servlet/JSP based multi-tiered enterprise application using a Tomcat container</h2>
+    <h3 class="subtitle">User Authentication Page</h3>
+    <form onsubmit="event.preventDefault(); authenticate();">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <button type="submit">Click to Authenticate</button>
+        </div>
+    </form>
+</body>
+</html>
